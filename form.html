@@ -1,0 +1,307 @@
+<html>
+<head>
+<title>FORM Assignment</title>
+<link rel="stylesheet" href="formcss.css">
+<link rel="stylesheet" href="formresponsive.css">
+
+</head>
+<body>
+	<div class = "dbackimg">
+			<div class="doverlay_homepic">
+				<h1 style="color:white; position: relative; top:30; left: 460px;">REGISTRATION FOR AYBET.com</h1>
+				<h2 style="color:white; position: relative; top:60; left: 70px;">1. Personal Details</h2>
+				<h2 style="color:white; position: relative; top:40; left: 340px;">>>>>>>>>>></h2>
+				<h2 style="color:white; position: relative; top:9; left: 540px;">2. Address Details</h2>
+				<h2 style="color:white; position: relative; top:-15; left: 800px;">>>>>>>>>>></h2>
+				<h2 style="color:white; position: relative; top:-40; left: 990px;">3. Confirmation</h2>
+				<div class = "overlyer">
+
+
+			<div class="formus">
+				
+				<div class ="forms">
+
+				<form>
+
+				<input class= "first"type="text" id="fname" name="firstname" placeholder=" First Name">
+				<br>
+				<br>
+				<br>
+				<input class= "first2" type="text" id="lname" name="last name" placeholder="Last Name">
+				<br>
+				<br>
+				<br>
+
+				<input class= "first3" type = "email" id="email" name = "email" placeholder="Email">
+				<br>
+				<br>
+				<br>
+				<input class= "first4" type="text" id="phnum" name="phone num" placeholder="Phone Number">
+				<br>
+                </form>
+            </div>
+ 
+            <div class ="forms2">
+				<form2>
+				<select class= "first5" id="country" name="country">
+					    <option value="country">Country ?</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="ghana">Ghana</option>
+                        <option value="Liberia">Liberia</option>
+                        <option value="united states">United States</option>
+                        </select>
+				<br>
+				<br>
+				<br>
+				<input class= "first6" type="text" id="street" name="street name" placeholder="Street">
+				<br>
+				<br>
+				<br>
+
+				<input class= "first7" type = "text" id="streetnum" name = "street number" placeholder="Street number">
+				<br>
+				<br>
+				<br>
+				<input class= "first8" type="text" id="cityname" name="city name" placeholder="City">
+				<br>
+                </form2>
+            </div>
+            <div class ="forms3">
+				<form3>
+				<select class= "first9" id="foot" name="football">
+					    <option value="do">Are you above 18 ?</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+				<br>
+				<br>
+				<br>
+				<select class= "first10" id="team" name="footteam">
+					    <option value="do">who is your favourite team ?</option>
+                        <option value="chels">Chelsea</option>
+                        <option value="barca">Barcelona</option>
+                        <option value="real">Real Madrid</option>
+                        <option value="manu">Man united</option>
+                        <option value="arsenal">Arsenal Fan tv</option>
+
+                        </select>
+				<br>
+				<br>
+				<br>
+
+				<select class= "first11" id="tandc" name="terms">
+					    <option value="do1">do you agree to terms and conditions ?</option>
+                        <option value="Yes1">Yes</option>
+                        <option value="No1">No</option>
+                        </select>
+                </form3>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+<script>
+ document.getElementById("fname").addEventListener("mouseleave", function(){
+ 	var x=document.getElementById("fname").value;  
+   if( /^[A-z]+$/.test(x)){
+   	document.getElementById("lname").style.visibility =" visible";
+   	
+   	document.getElementById("fname").style.border =" 2px solid blue";
+   	document.getElementById("fname").style.color =" black";
+
+    
+}
+else if( !(/^[A-z]+$/.test(x))){
+	document.getElementById("fname").style.border =" 2px solid red";
+	document.getElementById("fname").style.color =" red";
+	document.getElementById("lname").style.visibility =" hidden";
+	document.getElementById("email").style.visibility =" hidden";
+	document.getElementById("phnum").style.visibility =" hidden";
+	document.getElementById("country").style.visibility =" hidden";
+	document.getElementById("streetnum").style.visibility =" hidden";
+	document.getElementById("cityname").style.visibility =" hidden";
+	document.getElementById("foot").style.visibility =" hidden";
+	document.getElementById("team").style.visibility =" hidden";
+    document.getElementById("tandc").style.visibility =" hidden";
+
+}
+else{
+		document.getElementById("lname").style.visibility =" visible";
+
+
+}
+});
+  document.getElementById("lname").addEventListener("mouseleave", function(){
+ 	var x=document.getElementById("lname").value;  
+   if( /^[A-z]+$/.test(x)){
+   	document.getElementById("email").style.visibility =" visible";
+   	
+   	document.getElementById("lname").style.border =" 2px solid blue";
+   	document.getElementById("lname").style.color =" black";
+
+    
+}
+else if( !(/^[A-z]+$/.test(x))){
+	document.getElementById("lname").style.border =" 2px solid red";
+	document.getElementById("lname").style.color =" red";
+	document.getElementById("email").style.visibility =" hidden";
+	document.getElementById("phnum").style.visibility =" hidden";
+	document.getElementById("country").style.visibility =" hidden";
+	document.getElementById("street").style.visibility =" hidden";
+	document.getElementById("streetnum").style.visibility =" hidden";
+	document.getElementById("cityname").style.visibility =" hidden";
+	document.getElementById("foot").style.visibility =" hidden";
+	document.getElementById("team").style.visibility =" hidden";
+    document.getElementById("tandc").style.visibility =" hidden";
+
+
+}
+else{
+		document.getElementById("email").style.visibility =" visible";
+}
+});
+   document.getElementById("email").addEventListener("mouseleave", function(){
+ 	var x=document.getElementById("email").value;  
+   if( /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(x)){
+   	document.getElementById("phnum").style.visibility =" visible";
+   
+   	document.getElementById("email").style.border =" 2px solid blue";
+   	document.getElementById("email").style.color =" black";
+
+    
+}
+else if( !(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(x))){
+	document.getElementById("email").style.border =" 2px solid red";
+	document.getElementById("email").style.color =" red";
+	document.getElementById("phnum").style.visibility =" hidden";
+	document.getElementById("country").style.visibility =" hidden";
+	document.getElementById("street").style.visibility =" hidden";
+	document.getElementById("streetnum").style.visibility =" hidden";
+	document.getElementById("cityname").style.visibility =" hidden";
+	document.getElementById("foot").style.visibility =" hidden";
+	document.getElementById("team").style.visibility =" hidden";
+    document.getElementById("tandc").style.visibility =" hidden";
+
+
+
+}
+else{
+		document.getElementById("phnum").style.visibility =" visible";
+}
+});
+   document.getElementById("phnum").addEventListener("mouseleave", function(){
+ 	var x=document.getElementById("phnum").value;  
+   if( /^[0][1-9]\d{9}$|^[1-9]\d{9}$/.test(x)){
+   	document.getElementById("country").style.visibility =" visible";
+   	document.getElementById("phnum").style.border =" 2px solid blue";
+   	document.getElementById("phnum").style.color =" black";
+
+    
+}
+else if( !(/^[0][1-9]\d{9}$|^[1-9]\d{9}$/.test(x))){
+	document.getElementById("phnum").style.border =" 2px solid red";
+	document.getElementById("phnum").style.color =" red";
+	document.getElementById("country").style.visibility =" hidden";
+	document.getElementById("street").style.visibility =" hidden";
+	document.getElementById("streetnum").style.visibility =" hidden";
+	document.getElementById("cityname").style.visibility =" hidden";
+	document.getElementById("foot").style.visibility =" hidden";
+	document.getElementById("team").style.visibility =" hidden";
+    document.getElementById("tandc").style.visibility =" hidden";
+
+
+}
+else{
+		document.getElementById("country").style.visibility =" visible";
+}
+});
+document.getElementById("country").addEventListener("mouseleave", function(){  
+		document.getElementById("street").style.visibility =" visible";
+   
+   	document.getElementById("country").style.border =" 2px solid blue";
+});
+document.getElementById("street").addEventListener("mouseleave", function(){
+ 	var x=document.getElementById("street").value;  
+   if( /^[A-z]+$/.test(x)){
+   	document.getElementById("streetnum").style.visibility =" visible";
+   	
+   	document.getElementById("street").style.border =" 2px solid blue";
+   	document.getElementById("street").style.color =" black";
+
+    
+}
+else if( !(/^[A-z]+$/.test(x))){
+	document.getElementById("street").style.border =" 2px solid red";
+	document.getElementById("street").style.color =" red";
+	document.getElementById("streetnum").style.visibility =" hidden";
+	document.getElementById("cityname").style.visibility =" hidden";
+	document.getElementById("foot").style.visibility =" hidden";
+	document.getElementById("team").style.visibility =" hidden";
+    document.getElementById("tandc").style.visibility =" hidden";
+
+
+}
+else{
+		document.getElementById("streetnum").style.visibility =" visible";
+}
+});
+document.getElementById("streetnum").addEventListener("mouseleave", function(){
+ 	var x=document.getElementById("streetnum").value;  
+   if( /^[0-9]+$/.test(x)){
+   	document.getElementById("cityname").style.visibility =" visible";
+   	
+   	document.getElementById("streetnum").style.border =" 2px solid blue";
+   	document.getElementById("streetnum").style.color =" black";
+
+    
+}
+else if( !(/^[A-z]+$/.test(x))){
+	document.getElementById("streetnum").style.border =" 2px solid red";
+	document.getElementById("streetnum").style.color =" red";
+	document.getElementById("cityname").style.visibility =" hidden";
+	document.getElementById("foot").style.visibility =" hidden";
+	document.getElementById("team").style.visibility =" hidden";
+    document.getElementById("tandc").style.visibility =" hidden";
+
+}
+else{
+		document.getElementById("cityname").style.visibility =" visible";
+}
+});
+document.getElementById("cityname").addEventListener("mouseleave", function(){
+ 	var x=document.getElementById("cityname").value;  
+   if( /^[A-z]+$/.test(x)){
+   	document.getElementById("foot").style.visibility =" visible";
+   	document.getElementById("cityname").style.border =" 2px solid blue";
+   	document.getElementById("cityname").style.color =" black";
+
+    
+}
+else if( !(/^[A-z]+$/.test(x))){
+	document.getElementById("cityname").style.border =" 2px solid red";
+	document.getElementById("cityname").style.color =" red";
+	document.getElementById("foot").style.visibility =" hidden";
+	document.getElementById("team").style.visibility =" hidden";
+    document.getElementById("tandc").style.visibility =" hidden";
+
+}
+else{
+		document.getElementById("foot").style.visibility =" visible";
+}
+});
+document.getElementById("foot").addEventListener("mouseleave", function(){  
+		document.getElementById("team").style.visibility =" visible";
+   	document.getElementById("foot").style.border =" 2px solid blue";
+});
+document.getElementById("team").addEventListener("mouseleave", function(){  
+		document.getElementById("tandc").style.visibility =" visible";
+   	document.getElementById("team").style.border =" 2px solid blue";
+});
+
+document.getElementById("tandc").addEventListener("mouseleave", function(){  
+   	document.getElementById("tandc").style.border =" 2px solid blue";
+});
+</script>
+	</body>	
+</html>
